@@ -1,0 +1,2 @@
+summon cave_spider ~ ~ ~ {Tags:["smallSpiderCreature","smallSpiderCreatureIsBeingSummoned","creature"],PersistenceRequired:1b,ArmorItems:[{},{},{},{id:"minecraft:golden_hoe",Count:1b,tag:{Unbreakable:1b,Damage:32}}],Team:"Creature",Attributes:[{Name:generic.max_health,Base:7},{Name:generic.follow_range,Base:100},{Name:generic.attack_damage,Base:10},{Name:generic.movement_speed,Base:0.3}],Health:7f}
+execute as @e[tag=smallSpiderCreatureIsBeingSummoned,limit=1,sort=nearest] run function hp:creatures/setup_health

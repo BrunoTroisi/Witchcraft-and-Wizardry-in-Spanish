@@ -1,0 +1,2 @@
+summon spider ~ ~ ~ {Tags:["largeSpiderCreature","largeSpiderCreatureIsBeingSummoned","creature"],ArmorItems:[{},{},{},{id:"minecraft:golden_hoe",Count:1b,tag:{Unbreakable:1b,Damage:32}}],PersistenceRequired:1b,Team:"Creature",Attributes:[{Name:generic.max_health,Base:15},{Name:generic.follow_range,Base:100},{Name:generic.attack_damage,Base:40},{Name:generic.movement_speed,Base:0.3}],Health:15f}
+execute as @e[tag=largeSpiderCreatureIsBeingSummoned,limit=1,sort=nearest] run function hp:creatures/setup_health
