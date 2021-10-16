@@ -162,14 +162,14 @@ execute as @s[scores={conv=39,playerID=1}] run bossbar set minecraft:player1info
 execute as @s[scores={conv=39,playerID=2}] run bossbar set minecraft:player2info name {"text":"Arthur Weasley","bold":true,"color":"gold"}
 execute as @s[scores={conv=39,playerID=3}] run bossbar set minecraft:player3info name {"text":"Arthur Weasley","bold":true,"color":"gold"}
 execute as @s[scores={conv=39,playerID=4}] run bossbar set minecraft:player4info name {"text":"Arthur Weasley","bold":true,"color":"gold"}
-execute as @s[scores={conv=40,playerID=1}] run bossbar set minecraft:player1info name {"text":"Door Guard","bold":true,"color":"gold"}
-execute as @s[scores={conv=40,playerID=2}] run bossbar set minecraft:player2info name {"text":"Door Guard","bold":true,"color":"gold"}
-execute as @s[scores={conv=40,playerID=3}] run bossbar set minecraft:player3info name {"text":"Door Guard","bold":true,"color":"gold"}
-execute as @s[scores={conv=40,playerID=4}] run bossbar set minecraft:player4info name {"text":"Door Guard","bold":true,"color":"gold"}
-execute as @s[scores={conv=41,playerID=1}] run bossbar set minecraft:player1info name {"text":"Door Guard","bold":true,"color":"gold"}
-execute as @s[scores={conv=41,playerID=2}] run bossbar set minecraft:player2info name {"text":"Door Guard","bold":true,"color":"gold"}
-execute as @s[scores={conv=41,playerID=3}] run bossbar set minecraft:player3info name {"text":"Door Guard","bold":true,"color":"gold"}
-execute as @s[scores={conv=41,playerID=4}] run bossbar set minecraft:player4info name {"text":"Door Guard","bold":true,"color":"gold"}
+execute as @s[scores={conv=40,playerID=1}] run bossbar set minecraft:player1info name {"text":"Guardia","bold":true,"color":"gold"}
+execute as @s[scores={conv=40,playerID=2}] run bossbar set minecraft:player2info name {"text":"Guardia","bold":true,"color":"gold"}
+execute as @s[scores={conv=40,playerID=3}] run bossbar set minecraft:player3info name {"text":"Guardia","bold":true,"color":"gold"}
+execute as @s[scores={conv=40,playerID=4}] run bossbar set minecraft:player4info name {"text":"Guardia","bold":true,"color":"gold"}
+execute as @s[scores={conv=41,playerID=1}] run bossbar set minecraft:player1info name {"text":"Guardia","bold":true,"color":"gold"}
+execute as @s[scores={conv=41,playerID=2}] run bossbar set minecraft:player2info name {"text":"Guardia","bold":true,"color":"gold"}
+execute as @s[scores={conv=41,playerID=3}] run bossbar set minecraft:player3info name {"text":"Guardia","bold":true,"color":"gold"}
+execute as @s[scores={conv=41,playerID=4}] run bossbar set minecraft:player4info name {"text":"Guardia","bold":true,"color":"gold"}
 execute as @s[scores={conv=42,playerID=1}] run bossbar set minecraft:player1info name {"text":"Pomona Sprout","bold":true,"color":"gold"}
 execute as @s[scores={conv=42,playerID=2}] run bossbar set minecraft:player2info name {"text":"Pomona Sprout","bold":true,"color":"gold"}
 execute as @s[scores={conv=42,playerID=3}] run bossbar set minecraft:player3info name {"text":"Pomona Sprout","bold":true,"color":"gold"}

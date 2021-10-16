@@ -28,7 +28,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Your head looks full of wrackspurts. I'm \"},{\"text\":\"Xenophilius Lovegood\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Tu cabeza se ve llena de Torposoplos. Soy \"},{\"text\":\"Xenophilius Lovegood\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -63,20 +63,20 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" How can I help you?\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" ¿Le puedo ayudar en algo?\\n\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about the Quibbler\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Dime sobre El Quisquilloso\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 2
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ What's that symbol on your necklace?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ ¿Qué es ese símbolo en tu collar?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 3
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ What do you know about the Deathly Hallows?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ ¿Qué sabes sobre las reliquias de la muerte?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 6
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≥ Adios\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
@@ -103,7 +103,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" It's a tabloid published and edited by me! Luna gets every issue when it is published. I just published an edition to raise awareness of the existence of the Crumple-Horned Snorkack\\n\\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" ¡Es un tabloide publicado y editado por mí! Luna ayuda con todos los problemas cuando se publica. Acabo de publicar una edición para crear conciencia de la existencia de el Snorkack de cuernos arrugados\\n\\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -135,20 +135,20 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You mean this? Some refer to it as the Peverell coat of arms. Of course this is inaccurate; it is actually the sign of the Deathly Hallows. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" ¿Te refieres a esto? Algunos se refieren a él como el escudo de armas de Peverell. Por supuesto que eso es inexacto; En realidad es el signo de las viviendas de la muerte. \"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Why do you wear the symbol?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ ¿Por qué usas el símbolo?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 5
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about the Deathly Hallows\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Háblame de las reliquias de la muerte\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 6
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"I need to ask something else\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"Necesito preguntar algo mas\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 #-------------------------------
 #===============================
@@ -172,32 +172,32 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" What else do you want to know?\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" ¿Que mas quieres saber?\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ How did the Hallows come into existence?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ ¿Cómo llegaron las Santicias en existencia?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 8
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ What happened to the Deathly Hallows?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ ¿Qué pasó con las reliquias de la muerte?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 9
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about the Elder Wand\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Cuéntame sobre la Varita de Sauco\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 11
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about the Resurrection Stone\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Háblame de la piedra de la resurrección.\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=4}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 12
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about the Cloak of Invisibility\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≤ Cuéntame sobre la capa de la invisibilidad.\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=5}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 13
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about The Tale of the Three Brothers\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"≤ Cuéntame sobre la fabula de los tres hermanos.\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=6}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 7
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=7}] run data merge entity @s {CustomName:"{\"text\":\"I need to ask you something else\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=7}] run data merge entity @s {CustomName:"{\"text\":\"Necesito preguntarte algo mas\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=7}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 #-------------------------------
 
@@ -221,7 +221,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Some people attack me for sporting the symbol of a well-known dark wizard! Such ignorance. There is nothing dark about the Hallows - at least, not in that crude sense. One simply uses the symbol to reveal oneself to other believers, in the hope that they might help with the Quest.\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" ¡Algunas personas me atacan por lucir el símbolo de un mago oscuro conocido! Cuanta ignorancia. No hay nada oscuro sobre las reliquias. - Al menos, no en ese sentido crudo. Uno simplemente usa el símbolo para revelarse a otros creyentes, con la esperanza de que puedan ayudarlo en su búsqueda.\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -253,7 +253,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Deathly Hallows are three highly powerful magical objects supposedly created by Death and given to each of three brothers in the Peverell family; the Elder Wand, the most powerful wand ever made. The Resurrection Stone. The Cloak of Invisibility. Together they make the Deathly Hallows. Together they make one master of death.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Las reliquias de la muerte son tres objetos mágicos altamente poderosos supuestamente creados por la muerte y entregados a cada uno de los tres hermanos en la familia Peverell; La varita de Sauco, la varita más poderosa jamás hecha. La piedra de la resurrección. El manto de la invisibilidad. Juntos hacen las reliquias de la muerte. Juntando los tres, uno puede convertirse en el amo de la muerte.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -286,7 +286,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Tale of the Three Brothers was a fairy tale often told to wizard children. It can be read in full in the book 'The Tales of Beedle the Bard', which can be purchased in Diagon Alley.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" El cuento de los tres hermanos fue un cuento de hadas a menudo le dijo a los niños del asistente.Se puede leer en su totalidad en el libro 'Los cuentos de Beedle el Bardo', que se puede comprar en el Callejon Diagon.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -319,7 +319,7 @@ tag @s[scores={convState=8},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" According to legend - as noted in The Tales of Beedle the Bard - they were created by Death himself as a reward to the Peverell brothers for having evaded him. Others, including Dumbledore, think it more likely that the Peverell brothers were simply gifted, dangerous wizards who succeeded in creating those powerful objects.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Según la leyenda, como se señaló en los cuentos de Beedle el Bardo, fueron creados por la muerte, como una recompensa a los hermanos Peverell por haberlo evadido. Otros, incluidos Dumbledore, creen que es más probable que los hermanos Peverell fueran simplemente magos dotados y peligrosos que lograron crear esos poderosos objetos.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -351,7 +351,7 @@ tag @s[scores={convState=9},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Over time, the Hallows fell into legend. Very few knew they truly existed and because of this, very few tried to search for them. Out of this sprung a legend which said that whoever united the Hallows by possessing all three at the same time would become The Master of Death. Many have incorrectly assumed that becoming the 'Master of Death' will grant a form of immortality.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Con el tiempo, las reliquias se convirtieron en leyenda. Muy pocos sabían que realmente existían y debido a esto, muy pocos intentaron buscarlos. De esto surgió una leyenda, que decía que quienquiera que unía a las reliquias que posee las tres al mismo tiempo se convertiría en el maestro de la muerte. Muchos han asumido incorrectamente que convertirse en el 'Maestro de la Muerte' otorgará la inmortalidad.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -384,7 +384,7 @@ tag @s[scores={convState=11},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Elder Wand is said to be the most powerful wand that has ever existed. It was the first Hallow created, bestowed on Antioch Peverell, supposedly by Death himself. It is ancient and made of elder wood, fifteen inches long, and had a Thestral tail-hair core. Ironically all wands with Thestral tail hair cores will only work at their best for a wielder who has accepted death.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Se dice que la varita de Sauco es la varita más poderosa que ha existido. Fue la primera reliquia creada, otorgada a Antioch Peverell, supuestamente por la de la muerte. Es antigua y hecha de madera de sauco, quince pulgadas de largo, y tenía un núcleo de cabello de cola thestral. Irónicamente, todas las varitas con los núcleos de cabello de la cola de Thestral solo funcionarán mejor para un mago que ha aceptado la muerte.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -416,7 +416,7 @@ tag @s[scores={convState=12},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Resurrection Stone was the second Hallow created, bestowed on Cadmus Peverell, supposedly by Death himself. It is said to be the only object that would bring back the spirits of the holder's deceased loved ones, activating when turned three times in the user's hand.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" La piedra de la resurrección fue la segunda reliquia creada, otorgada en Cadmus Peverell, supuestamente por la muerte. Se dice que es el único objeto que le devolvería a la vida a los espíritus de los seres queridos fallecidos del portador.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -449,7 +449,7 @@ tag @s[scores={convState=13},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Cloak of Invisibility is a magical artifact used to render the wearer invisible. It was the third and final Hallow created, bestowed to Ignotus Peverell, supposedly by Death himself. It was the only known invisibility cloak that would not fade with age and would provide everlasting protection to the wearer, something no normal invisibility cloak could provide.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" El manto de la invisibilidad es un artefacto mágico que se usa para hacer que el usuario sea invisible. Fue la tercera y última reliquia creada, otorgada a Ignotus Peverell, supuestamente por la muerte. Era la única capa conocida de invisibilidad que no se desvanecería con la edad y proporcionaría protección eterna al usuario, algo que no podría proporcionar una capa de invisibilidad normal.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -484,7 +484,7 @@ tag @s[scores={convState=14},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Most wizards claim that the story of the Deathly Hallows was invented by Beedle the Bard as part of his stories. But only as a children's tale, told to amuse rather than to instruct. Few wizards ever realised that the Deathly Hallows were genuine items. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" La mayoría de los magos afirman que la historia de las reliquias de la muerte fue inventada por Beedle el Bardo como parte de sus historias. Pero solo como cuento de niños, dicen que mas a diversión en lugar de instruir. Pocos magos saben que las reliquias de la muerte eran artículos genuinos.. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -517,7 +517,7 @@ tag @s[scores={convState=15},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Nargles? Nargles are everywhere. It's a wonder that more people don't spot them. I even think I might have seen signs of nargles over by the old windmill. Perhaps you could go there and investigate. I should very much like to print any information you find in the Quibbler. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Nargles? Los nargles están en todas partes. Es una maravilla que más personas no los vean. Incluso creo que podría haber visto signos de nargles por el antiguo molino de viento.. Tal vez puedas ir allí e investigar. Me gustaría mucho escribir cualquier información que encuentres en El Quisquilloso.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -551,7 +551,7 @@ tag @s[scores={convState=16},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You will need to use a pair of spectrespecs. These glasses reveal things that remain unseen to the naked eye. There is a world of difference between what we see and what is. Too many people don't realise this. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Tendrás que usar un par de espectrogafas. Estas gafas revelan cosas que permanecen ocultas a simple vista. Hay un mundo de diferencia entre lo que vemos y lo que es. Demasiadas personas no se dan cuenta de esto. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -584,14 +584,14 @@ tag @s[scores={convState=17},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I'll provide a pair of spectrespecs in case you don't have some already. \\n Here, take these. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Proporcionaré un par de espectrogafas en caso de que ya no tengas unas. \\n Aquí, toma estos. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"Accept spectrespecs \"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"Aceptar espectrogafas \"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 18
 #-------------------------------
 
@@ -617,7 +617,7 @@ tag @s[scores={convState=18},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Now go to the windmill. Put on your spectrespecs. Look for clues! Nargles are devious and thieving little beasts. They are very adept at hiding... \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ahora ve al molino de viento. Ponte tus espectrogafas. ¡Busque pistas! Los nargles son tortuosos y ladrones, pequeñas bestias. Son muy adeptos a esconderse ... \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -650,7 +650,7 @@ tag @s[scores={convState=19},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" When you are done investigating come back to me, and tell me everything you found. \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Cuando termines de investigar, vuelve a mí, y dime todo lo que encontraste. \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -684,7 +684,7 @@ tag @s[scores={convState=20},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Well? Did you see anything? No? These nargles are better at hiding than I thought. I know they are out there! So does my Luna. And so do our loyal readers. The Quibbler is the only newspaper brave enough to print this information, cast aside by wizards and witches, living as sheep, unwilling to open their eyes.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" ¿Bien?¿Has visto algo? ¿No? Estos nargles son mejores para esconderse de lo que pensé. ¡Sé que están ahí afuera! También lo sabe mi Luna. Y también nuestros lectores leales.El Quisquilloso es el único periódico lo suficientemente valiente como para imprimir esta información., Dejado a un lado por magos y brujas, viviendo como ovejas, no dispuestos a abrir los ojos.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -717,14 +717,14 @@ tag @s[scores={convState=21},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" We shall find them one day. As for now, I thank you. Please, take this: a gift. A token of my thanks.\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Los encontraremos un día. En cuanto a ahora, te lo agradezco. Por favor, toma esto: un regalo. Una muestra de mi agradecimiento.\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≥ Thanks (Accept: 150 ≈)\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≥ Gracias (Aceptar: 150 ≈)\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] run scoreboard players set @s trackedQuestID 56
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] run tag @s add hasCompletedSnipeHunt
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState -1

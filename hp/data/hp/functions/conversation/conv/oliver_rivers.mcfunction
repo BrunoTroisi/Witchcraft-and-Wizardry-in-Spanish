@@ -111,7 +111,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Really? Are you sure? Thank you! But be careful, it's dangerous in there, you know. It's called the Forbidden Forest for a reason! \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Really? Are you sure? ¡Gracias! But be careful, it's dangerous in there, you know. It's called the Forbidden Forest for a reason! \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

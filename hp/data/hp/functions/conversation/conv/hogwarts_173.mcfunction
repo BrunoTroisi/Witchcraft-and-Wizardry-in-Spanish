@@ -80,7 +80,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You would do that? Thanks so much! Thank you! She spends a lot of time around the Jubilee Gardens by London Eye. You might be able to find her there. Just tell her what you did and I'm sure she'll give you something for your troubles when you have delivered it. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You would do that? Thanks so much! ¡Gracias! She spends a lot of time around the Jubilee Gardens by London Eye. You might be able to find her there. Just tell her what you did and I'm sure she'll give you something for your troubles when you have delivered it. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

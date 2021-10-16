@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Hello! I'm your Herbology teacher, \"},{\"text\":\"Pomona Sprout\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\\n\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" ¡Hola! Soy tu profesora de herbología, \"},{\"text\":\"Pomona Sprout\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\\n\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -62,7 +62,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" How can I help you, dear?\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" ¿Cómo puedo ayudarte, querid@?\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -71,13 +71,13 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 
 
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about Herbology\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Cuéntame sobre la herbología\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 6
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about Hufflepuff\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Cuéntame acerca de Hufflepuff\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 7
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Did you go to Hogwarts?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ ¿Fuiste a Hogwarts?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 9
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≥ Adios\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
@@ -106,7 +106,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Collect 4 stars from the nearby greenhouses and then return to me. You will need to use what you have learned about the properties of mandrakes. Make sure you have some earmuffs equipped if you go near them. Otherwise you won't be able to get past.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Recoge 4 estrellas de los invernaderos cercanos y luego regresa conmigo. Tendrá que usar lo que ha aprendido sobre las propiedades de las mandragoras. Asegúrate de tener algunas orejeras equipadas si vas cerca de ellos. De lo contrario, no podrás pasar.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -138,17 +138,17 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Exemplary performance! 10 points to Gryffindor.\\n\\n You are now well equipped to handle mandrakes if you should ever encounter any. When you are ready you can head to your next class: Transfiguration with Professor McGonagall.\\n\"}"}
-execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Exemplary performance! 10 points to Ravenclaw.\\n\\n You are now well equipped to handle mandrakes if you should ever encounter any. When you are ready you can head to your next class: Transfiguration with Professor McGonagall.\\n\"}"}
-execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Exemplary performance! 10 points to Hufflepuff.\\n\\n You are now well equipped to handle mandrakes if you should ever encounter any. When you are ready you can head to your next class: Transfiguration with Professor McGonagall.\\n\"}"}
-execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Exemplary performance! 10 points to Slytherin.\\n\\n You are now well equipped to handle mandrakes if you should ever encounter any. When you are ready you can head to your next class: Transfiguration with Professor McGonagall.\\n\"}"}
+execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Una actuación ejemplar! 10 puntos para Gryffindor.\\n\\n Ahora estás bien preparad@ para lidiar con las mandragoras si alguna vez debes hacerlo. Cuando estés list@, puedes dirigirte a tu próxima clase: Transfiguración con la profesora McGonagall.\\n\"}"}
+execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Una actuación ejemplar! 10 puntos para Ravenclaw.\\n\\n Ahora estás bien preparad@ para lidiar con las mandragoras si alguna vez debes hacerlo. Cuando estés list@, puedes dirigirte a tu próxima clase: Transfiguración con la profesora McGonagall.\\n\"}"}
+execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Una actuación ejemplar! 10 puntos para Hufflepuff.\\n\\n Ahora estás bien preparad@ para lidiar con las mandragoras si alguna vez debes hacerlo. Cuando estés list@, puedes dirigirte a tu próxima clase: Transfiguración con la profesora McGonagall.\\n\"}"}
+execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Una actuación ejemplar! 10 puntos para Slytherin.\\n\\n Ahora estás bien preparad@ para lidiar con las mandragoras si alguna vez debes hacerlo. Cuando estés list@, puedes dirigirte a tu próxima clase: Transfiguración con la profesora McGonagall.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"Thanks!\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"¡Gracias!\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] run tag @s add hasSpokenToSproutAfterHerbologyLesson
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] run scoreboard players set @s trackedQuestID 27
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState -1
@@ -176,7 +176,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" We'll begin shortly. Just wait for everyone to arrive.\\n\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Comenzaremos en breve. Solo espera a que todos lleguen.\\n\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -207,7 +207,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Herbology is the study of magical and mundane plants and fungi and their properties. Students must learn how to care for and deal with different plants. Some plants can be dangerous, and others have useful properties, such as mandrakes, fluxweed or Branquialgas which are all important ingredients in certain potions. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" La herbología es el estudio de plantas, hongos mágicos (y mundanos) y sus propiedades. Los estudiantes deben aprender a cuidar y tratar con diferentes plantas. Algunas pueden ser peligrosas, y otras tienen propiedades útiles, como las mandragoras, el fluxweed o las branquialgas, que son ingredientes importantes en ciertas pociones. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -240,7 +240,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Hufflepuff House was founded by the medieval witch Helga Hufflepuff. It's the most inclusive amongst the four houses, valuing patience, kindness, loyalty and hard work, rather than some particular aptitude in its students. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Hufflepuff fue fundada por la bruja medieval Helga Hufflepuff. Es la más inclusiva entre las cuatro casas, valorando la paciencia, la amabilidad, la lealtad y el trabajo duro, en lugar de una aptitud particular en sus estudiantes. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -272,7 +272,7 @@ tag @s[scores={convState=8},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The emblematic animal is a badger, and the house colours are yellow and black. I am the head of Hufflepuff, and the patron ghost is the Fat Friar. Students of Hufflepuff often develop an aptitude for Herbology, perhaps because of the common room being so rich in vegetation. I like to think that it also has something to do with me. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" El animal emblemático es un tejón, y los colores de la casa son el amarillo y negro. Soy la cabeza de Hufflepuff, y el fantasma del patrón es el fraile gordo. Los estudiantes de Hufflepuff a menudo desarrollan una aptitud para la herbología, tal vez debido a que la sala común era tan rica en la vegetación. Me gusta pensar que también tiene algo que ver conmigo. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -305,7 +305,7 @@ tag @s[scores={convState=9},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I did. I was sorted into Hufflepuff. I took an interest in Herbology and excelled at it in my time at Hogwarts. So, some years after my graduation I returned to teach after Professor Herbert Berry retired. I also went on to become the head of Hufflepuff House. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Si fui, fui seleccionada a Hufflepuff. Tomé un interés en la herbología y sobresali en ello durante mi tiempo en Hogwarts. Entonces, algunos años después de mi graduación, volví a enseñar después de que el profesor Herbert Berry se retiró. También termine convirtiendome en la cabeza de Hufflepuff. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

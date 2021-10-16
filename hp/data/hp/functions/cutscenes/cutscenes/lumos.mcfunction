@@ -331,7 +331,7 @@ execute as @s[scores={cutSceneTimer=300}] run function hp:cutscenes/fade_in
 
 # ¤Flitwick:¤ Welcome students. My name is Professor Flitwick and I teach charms here at Hogwarts.
 execute as @s[scores={cutSceneTimer=30},tag=cutsceneLeader] as @e[tag=flitwickClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 20 1 0
-execute as @s[scores={cutSceneTimer=25..160}] run title @s actionbar ["",{"text":""},{"text":"Flitwick:","color":"dark_gray"},{"text":" Buenvenidos estudiantes. Mi nombre es Profesor Flitwick y enseño encantamientos aquí en Hogwarts."}]
+execute as @s[scores={cutSceneTimer=25..160}] run title @s actionbar ["",{"text":""},{"text":"Flitwick:","color":"dark_gray"},{"text":" Bienvenidoss estudiantes. Mi nombre es Profesor Flitwick y enseño encantamientos aquí en Hogwarts."}]
 execute as @s[scores={cutSceneTimer=33},tag=cutsceneLeader] as @e[tag=flitwickClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=37},tag=cutsceneLeader] as @e[tag=flitwickClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=41},tag=cutsceneLeader] as @e[tag=flitwickClassroom,limit=1] run function hp:npc/update_npc_head_expression

@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, hello dear. How nice to see a new face. Not a lot of people come all the way down here, to the end of the street. Welcome to Scrolls and Tomes. Feel free to look around, and let me know if you find anything to your liking.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, hola querid@. Qué agradable ver una nueva cara. No mucha gente viene hasta aquí, hasta el final de la calle. Bienvenido a Rollos y Tomos. Siéntase libre de mirar alrededor, y avíseme si encuentra algo de tu agrado.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

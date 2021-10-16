@@ -132,7 +132,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Welcome to Madam Malkin's Robes for All Occasions! How can I help you?\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Welcome to Madam Malkin's Robes for All Occasions! ¿Le puedo ayudar en algo?\\n\\n\\n\\n\"}"}
 
 execute if entity @s[tag=use] run tag @s add longHeader
 
