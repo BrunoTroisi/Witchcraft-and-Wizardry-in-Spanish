@@ -1,4 +1,4 @@
-# -Witchcraft-and-Wizardry-in-Spanish
+# Witchcraft-and-Wizardry-in-Spanish
   
 This is a Spanish version of popular Minecraft map Witchcraft and Wizardry. Now this map is fully thanslated in Russian.  
 Trailer:  
